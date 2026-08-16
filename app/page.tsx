@@ -339,7 +339,7 @@ export default function Dashboard() {
                       })}
                     </div>
                   </div>
-                  <span className={`status-badge status-${order.status}`}>{STATUS_LABELS[order.status]}</span>
+                  <span className={`status-badge status-${order.status}`}>{STATUS_LABELS[order.status as Status] ?? order.status}</span>
                 </div>
 
                 <div className="order-grid">
